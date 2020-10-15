@@ -13,6 +13,7 @@ class SearchBar extends React.Component {
     e.preventDefault();
 
     // TODO: make callback from parent component
+    this.props.onTermSubmit(this.state.term);
   }
 
   render() {
